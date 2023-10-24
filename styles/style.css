@@ -54,10 +54,11 @@ ol {
 
 .content {
   inline-size: 1140px;
+  block-size: 534px;
   display: flex;
   align-items: flex-end;
   gap: 30px;
-  margin: 0 30px;
+  margin: 133px 30px;
 }
 
 /*--------- left block -----------*/
