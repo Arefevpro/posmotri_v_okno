@@ -124,7 +124,7 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
-  border: 1px solid #FFF;
+  outline: 1px solid #FFF;
 }
 
 .search-form__checkbox-list 
@@ -144,17 +144,21 @@ span.search-form__pseudo-checkbox {
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
-  margin-right: 5px;
 }
 
-.search-form__pseudo-checkbox:active {
-  width: 15px;
-  height: 15px;
-  background: #FFF;
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: '';
+  min-inline-size: 15px;
+  min-block-size: 15px;
+  background-color: #fff;
 }
 
 .search-form__label-text {
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.70);
+}
+
+.search-form__textfield:focus {
+  outline: none;
 }
 
 .search-form__textfield {
@@ -168,6 +172,7 @@ span.search-form__pseudo-checkbox {
   appearance: none;
   font-family: inherit;
   font-size: inherit;
+  color: #fff;
 }
 
 .search-form__textfield::placeholder {
@@ -176,10 +181,6 @@ span.search-form__pseudo-checkbox {
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
-}
-
-.search-form__textfield:focus {
-  outline: none;
 }
 
 .button {
@@ -196,12 +197,9 @@ span.search-form__pseudo-checkbox {
 }
 
 .search-form__submit-button {
-  display: flex;
-  width: 194px;
-  height: 34px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  align-self: flex-end;
+  min-inline-size: 194px;
+  min-block-size: 34px;
 }
 
 .button:hover {
@@ -210,6 +208,10 @@ span.search-form__pseudo-checkbox {
 
 .button:active {
   background: #545050;
+}
+
+.button:focus {
+  outline: 1px solid #FFF;
 }
 
 /*--------- right block -----------*/
@@ -302,8 +304,8 @@ span.search-form__pseudo-checkbox {
 
 .more-button {
   display: flex;
-  width: 399px;
-  height: 34px;
+  inline-size: 100%;
+  min-block-size: 34px;
   justify-content: center;
   align-items: center;
 }
