@@ -15,10 +15,6 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  display: inline-flex;
-  padding: 133px 30px;
-  justify-content: center;
-  align-items: center;
 }
 
 h1,
@@ -61,6 +57,7 @@ ol {
   display: flex;
   align-items: flex-end;
   gap: 30px;
+  margin: 0 30px;
 }
 
 /*--------- left block -----------*/
