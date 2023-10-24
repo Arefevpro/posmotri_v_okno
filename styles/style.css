@@ -58,7 +58,7 @@ ol {
   display: flex;
   align-items: flex-end;
   gap: 30px;
-  margin: 266px 30px;
+  margin: auto 30px;
 }
 
 /*--------- left block -----------*/
