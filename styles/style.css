@@ -87,12 +87,6 @@ ol {
   object-fit: cover;
 }
 
-.preloader-template {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -312,10 +306,4 @@ span.search-form__pseudo-checkbox {
   min-block-size: 34px;
   justify-content: center;
   align-items: center;
-}
-
-.preloader-template {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
