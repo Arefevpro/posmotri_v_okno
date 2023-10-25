@@ -313,3 +313,9 @@ span.search-form__pseudo-checkbox {
   justify-content: center;
   align-items: center;
 }
+
+.preloader-template {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
